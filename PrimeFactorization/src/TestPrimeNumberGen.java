@@ -49,6 +49,12 @@ public class TestPrimeNumberGen {
 		assertEquals(getList(2, 3, 5, 7), PrimeNumberGen.GeneratePrimeNumbers(8));
 	}
 	
+	@Test
+	public void TestTen()
+	{
+		assertEquals(getList(2, 3, 5, 7), PrimeNumberGen.GeneratePrimeNumbers(10));
+	}
+	
 	private ArrayList<Integer> getList(int... vars)
 	{
 		ArrayList<Integer> returnable = new ArrayList<Integer>();
