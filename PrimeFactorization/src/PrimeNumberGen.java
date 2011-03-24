@@ -8,7 +8,10 @@ public class PrimeNumberGen {
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		if (num > 2)
 		{
-			arr.add(2);
+			for(int i = 2; i < num; i++)
+			{
+				arr.add(i);
+			}
 		}
 		return arr;
 	}
