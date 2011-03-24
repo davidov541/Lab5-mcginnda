@@ -5,8 +5,7 @@ public class PrimeNumberGen {
 
 	public static ArrayList<Integer> GeneratePrimeNumbers(int i)
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return new ArrayList<Integer>();
 	}
 
 }
