@@ -27,6 +27,12 @@ public class TestPrimeFactorization {
 		assertEquals(getList(3), PrimeFactorization.GetPrimeFactors(3));
 	}
 	
+	@Test
+	public void TestFour()
+	{
+		assertEquals(getList(2, 2), PrimeFactorization.GetPrimeFactors(4));
+	}
+	
 	private ArrayList<Integer> getList(int... vars)
 	{
 		ArrayList<Integer> returnable = new ArrayList<Integer>();
