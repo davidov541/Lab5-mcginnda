@@ -4,10 +4,13 @@ public class PrimeFactorization {
 
 	public static ArrayList<Integer> GetPrimeFactors(int num) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
-		while (num %2 == 0)
+		for(int candidate = 2; num > 1; candidate++)
 		{
-			ret.add(2);
-			num /= 2;
+			while (num % candidate == 0)
+			{
+				ret.add(candidate);
+				num /= candidate;
+			}
 		}
 		
 		if (num > 1)
