@@ -6,14 +6,11 @@ public class PrimeNumberGen {
 	public static ArrayList<Integer> GeneratePrimeNumbers(int num)
 	{
 		ArrayList<Integer> arr = new ArrayList<Integer>();
-		if (num > 2)
+		for(int i = 2; i < num; i++)
 		{
-			for(int i = 2; i < num; i++)
+			if (i % 2 != 0 || i == 2)
 			{
-				if (i % 2 != 0 || i == 2)
-				{
-					arr.add(i);
-				}
+				arr.add(i);
 			}
 		}
 		return arr;
