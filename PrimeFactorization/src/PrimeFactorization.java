@@ -6,16 +6,10 @@ public class PrimeFactorization {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int candidate = 2; num > 1; candidate++)
 		{
-			while (num % candidate == 0)
+			for (; num % candidate == 0; num /= candidate)
 			{
 				ret.add(candidate);
-				num /= candidate;
 			}
-		}
-		
-		if (num > 1)
-		{
-			ret.add(num);
 		}
 		return ret;
 	}
