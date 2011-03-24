@@ -8,9 +8,14 @@ public class PrimeNumberGen {
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		for(int i = 2; i < num; i++)
 		{
-			if (i % 2 != 0 || i == 2)
+			arr.add(i);
+			for(int j = 0; j < arr.size() - 1; j++)
 			{
-				arr.add(i);
+				if (i % arr.get(j) == 0)
+				{
+					arr.remove(arr.size() - 1);
+					break;
+				}
 			}
 		}
 		return arr;
